@@ -10,7 +10,7 @@ spring:
     password: myPassword
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create-drop # drops database every time
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect

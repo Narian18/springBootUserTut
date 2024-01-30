@@ -40,8 +40,6 @@ public class WebSecurityConfig {
                      .defaultSuccessUrl("/", true)
                     .permitAll()
                 )
-                .exceptionHandling(exceptionHandling -> exceptionHandling
-                        .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.NOT_FOUND)))
                 .build();
     }
 
