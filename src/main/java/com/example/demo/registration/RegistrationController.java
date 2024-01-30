@@ -1,5 +1,6 @@
 package com.example.demo.registration;
 
+import com.example.demo.registration.api_schemas.RegistrationRequest;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,6 +16,11 @@ public class RegistrationController {
     @PostMapping
     public String register(@RequestBody RegistrationRequest request) {
         return registrationService.register(request);
+    }
+
+    @GetMapping(path = "confirm")
+    public String confirm(@RequestParam("token") String token) {
+        return registrationService.confirmToken(token);
     }
 
 }

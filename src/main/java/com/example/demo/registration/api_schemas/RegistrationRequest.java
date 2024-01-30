@@ -1,4 +1,4 @@
-package com.example.demo.registration;
+package com.example.demo.registration.api_schemas;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
